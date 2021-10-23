@@ -5,6 +5,33 @@
   font-family: "Montserrat", sans-serif;
 }
 
+body {
+  background: url("../assets/otherImg/bg06.jpg");
+}
+#main-bg {
+  background: url("../assets/otherImg/minskRI.png") no-repeat center / cover;
+  background-attachment: fixed;
+  position: relative;
+  height: 100vh;
+  max-width: 100%;
+  max-height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#main-bg h1 {
+  font-size: 60px;
+  text-align: center;
+  color: #565656;
+}
+#main-bg .authors {
+  text-align: start;
+  position: absolute;
+  right: 2%;
+  bottom: 3%;
+  color: #000;
+}
 nav {
   position: sticky;
   z-index: 3000;
@@ -39,11 +66,24 @@ section {
   padding: 2%;
   margin: 0 auto;
 }
+.wrapper p a {
+  text-decoration: none;
+  color: #d63939;
+}
+.wrapper p a:hover {
+  text-decoration: underline;
+}
 .wrapper ul {
   margin: 20px;
 }
 .wrapper ul li {
   margin-top: 10px;
+}
+.main-letter {
+  font-size: 40px;
+  font-family: "Princess Sofia", cursive;
+  margin: 4px;
+  color: #ff5151;
 }
 h2.title {
   color: #000;
