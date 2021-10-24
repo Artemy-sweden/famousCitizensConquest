@@ -147,6 +147,23 @@ p {
   height: 270px;
   margin: 20px 50px;
 }
+.street__photos {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.street__photos img {
+  width: 270px;
+  height: 200px;
+  margin: 20px 10px;
+}
+.street__photos img:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  transition: 0.3s;
+}
 .photo__inner p {
   margin-top: -20px;
   text-align: center;
@@ -155,6 +172,13 @@ p {
   transition: 0.3s;
   opacity: 0.5;
   cursor: pointer;
+}
+.citizen-photo {
+  align-self: flex-start;
+}
+.citizen-photo img {
+  width: 300px;
+  height: 420px;
 }
 footer {
   background: #ff5151;
@@ -199,5 +223,21 @@ footer p {
     margin: 20px 30px;
     width: 120px;
     height: 170px;
+  }
+  .street__photos {
+    width: 100%;
+  }
+  .citizen-photo img {
+    width: 150px;
+    height: 210px;
+  }
+}
+@media (max-width: 500px) {
+  .citizen-container {
+    flex-direction: column;
+  }
+  .citizen-photo {
+    order: -1;
+    margin: 0 auto;
   }
 }
