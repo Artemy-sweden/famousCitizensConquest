@@ -6,7 +6,10 @@
 }
 
 body {
-  background: url("../assets/otherImg/bg06.jpg");
+  background: url("../assets/otherImg/bg06.png");
+}
+span.bold {
+  font-weight: bold;
 }
 #main-bg {
   background: url("../assets/otherImg/minskRI.png") no-repeat center / cover;
@@ -82,7 +85,7 @@ section {
 .main-letter {
   font-size: 60px;
   /* font-family: "Dancing Script", cursive; */
-  font-family: "Lobster";
+  font-family: "Marck Script", cursive;
 
   color: #ff5151;
   text-transform: uppercase;
@@ -183,18 +186,18 @@ p {
 footer {
   background: #ff5151;
   color: #fff;
-  height: 150px;
+  height: 120px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  clip-path: polygon(0 0, 100% 30%, 100% 100%, 0 100%);
+  /* clip-path: polygon(0 0, 100% 30%, 100% 100%, 0 100%); */
   padding: 2%;
 }
-footer p:first-child {
+/* footer p:first-child {
   margin-top: 30px;
-}
+} */
 footer p {
   text-align: center;
   padding: 0;
