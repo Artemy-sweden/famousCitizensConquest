@@ -163,10 +163,10 @@ p {
   margin: 20px 10px;
 }
 .street__photos img:hover {
-  cursor: pointer;
   opacity: 0.5;
   transition: 0.3s;
 }
+
 .photo__inner p {
   margin-top: -20px;
   text-align: center;
