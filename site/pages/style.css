@@ -51,7 +51,7 @@ nav ul li {
   list-style: none;
 }
 nav ul li a {
-  padding: 20px 60px;
+  padding: 18px 50px;
   text-decoration: none;
   color: #fff;
 }
@@ -80,10 +80,12 @@ section {
   margin-top: 10px;
 }
 .main-letter {
-  font-size: 40px;
-  font-family: "Princess Sofia", cursive;
-  margin: 4px;
+  font-size: 60px;
+  /* font-family: "Dancing Script", cursive; */
+  font-family: "Lobster";
+
   color: #ff5151;
+  text-transform: uppercase;
 }
 h2.title {
   color: #000;
@@ -153,4 +155,49 @@ p {
   transition: 0.3s;
   opacity: 0.5;
   cursor: pointer;
+}
+footer {
+  background: #ff5151;
+  color: #fff;
+  height: 150px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  clip-path: polygon(0 0, 100% 30%, 100% 100%, 0 100%);
+  padding: 2%;
+}
+footer p:first-child {
+  margin-top: 30px;
+}
+footer p {
+  text-align: center;
+  padding: 0;
+}
+
+/*                     adaptive                      */
+
+@media (max-width: 768px) {
+  nav ul li a {
+    padding: 18px 2px;
+  }
+  nav ul {
+    width: 100%;
+    justify-content: space-around;
+  }
+  h2.title {
+    font-size: calc(20px + 20 * (100vw / 1440));
+  }
+  #main-bg h1 {
+    font-size: calc(30px + 20 * (100vw / 1440));
+  }
+  .photo__inner {
+    width: 100%;
+  }
+  .photo__inner img {
+    margin: 20px 30px;
+    width: 120px;
+    height: 170px;
+  }
 }
