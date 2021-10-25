@@ -12,7 +12,8 @@ span.bold {
   font-weight: bold;
 }
 #main-bg {
-  background: url("../assets/otherImg/minskRI.png") no-repeat center / cover;
+  background: url("../assets/otherImg/Minsk-GatesColor.png") no-repeat center /
+    cover;
   background-attachment: fixed;
   position: relative;
   height: 100vh;
@@ -26,14 +27,29 @@ span.bold {
 #main-bg h1 {
   font-size: 60px;
   text-align: center;
-  color: #565656;
+  color: #ffffff;
+  animation: fadeIn 1.5s linear;
+  overflow-y: hidden;
 }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    margin-top: 50px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+
 #main-bg .authors {
+  display: none; /*                without authors                                           */
   text-align: start;
   position: absolute;
   right: 2%;
   bottom: 3%;
-  color: #000;
+  color: rgb(255, 255, 255);
 }
 nav {
   position: sticky;
@@ -59,8 +75,14 @@ nav ul li a {
   color: #fff;
 }
 nav ul li a:hover {
+  transition: 0.3s;
   background: #d63939;
 }
+
+._active-link {
+  background: #d44949;
+}
+
 section {
   padding: 3% 0;
 }
@@ -150,6 +172,19 @@ p {
   height: 270px;
   margin: 20px 50px;
 }
+.photo__block {
+  animation: citizensFadeIn 1s linear;
+}
+
+@keyframes citizensFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .street__photos {
   width: 85%;
   margin: 0 auto;
