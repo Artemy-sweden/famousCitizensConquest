@@ -16,6 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap"
       rel="stylesheet"
     />
+    <script src="../scripts/script.js"></script>
     <title>Имена минчан на карте Минска</title>
   </head>
   <body>
@@ -73,9 +74,25 @@
       <div class="wrapper">
         <h2 class="title">Фотографии</h2>
         <div class="street__photos">
-          <img src="../assets/otherImg/minsk1821.png" alt="street-photo" />
-          <img src="../assets/otherImg/minsk1934.jpg" alt="street-photo" />
-          <img src="../assets/otherImg/minskRI.png" alt="street-photo" />
+          <div class="shadowbox"></div>
+          <img
+            src="../assets/img/Bogadanovich-street.jpg"
+            alt="street-photo"
+            onclick="zoom('street-photo-1')"
+            id="street-photo-1"
+          />
+          <img
+            src="../assets/img/Bogdanovich-4.jpg"
+            alt="street-photo"
+            onclick="zoom('street-photo-2')"
+            id="street-photo-2"
+          />
+          <img
+            src="../assets/img/Bogdanovich-street-1.jpg"
+            alt="street-photo"
+            onclick="zoom('street-photo-3')"
+            id="street-photo-3"
+          />
         </div>
       </div>
     </section>

@@ -200,8 +200,30 @@ p {
 .street__photos img:hover {
   opacity: 0.5;
   transition: 0.3s;
+  cursor: zoom-in;
 }
-
+.street__photos img.zoomed {
+  transition: 0.3s;
+  transform: scale(2.5);
+  position: fixed;
+  top: calc(50vh - 120px);
+  left: calc(50vw - 0);
+  z-index: 2000;
+}
+.street__photos img.zoomed:hover {
+  cursor: zoom-out;
+  opacity: 1;
+}
+.shadowbox {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
 .photo__inner p {
   margin-top: -20px;
   text-align: center;
@@ -221,7 +243,7 @@ p {
 footer {
   background: #ff5151;
   color: #fff;
-  height: 120px;
+
   width: 100%;
   display: flex;
   justify-content: center;
@@ -269,6 +291,9 @@ footer p {
     width: 150px;
     height: 210px;
   }
+  .street__photos img.zoomed {
+    transform: scale(1.5);
+  }
 }
 @media (max-width: 500px) {
   .citizen-container {
@@ -277,5 +302,14 @@ footer p {
   .citizen-photo {
     order: -1;
     margin: 0 auto;
+  }
+  .street__photos img.zoomed {
+    transform: scale(1);
+  }
+  nav ul li a {
+    font-size: 14px;
+  }
+  nav ul li {
+    text-align: center;
   }
 }
